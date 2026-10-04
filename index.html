@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" data-theme="amethyst">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nishanta Banik</title>
+  <meta name="description" content="Nishanta Banik — Senior Cloud DevOps & Platform Engineer in Berlin. Google Cloud, AWS, Azure, Kubernetes, Terraform, DevSecOps." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Menu bar -->
+  <header class="menubar">
+    <div class="mb-left">
+      <span class="logo" id="logo"></span>
+      <span class="mb-active" id="activeTitle">Desktop</span>
+    </div>
+    <div class="mb-right">
+      <div class="themes" id="themes" aria-label="Theme"></div>
+      <span class="mb-status"><i class="pulse"></i>Open to work</span>
+      <span id="clock"></span>
+    </div>
+  </header>
+
+  <!-- Desktop (>= 820px) -->
+  <main class="desktop" id="desktop">
+    <div class="glow g1"></div><div class="glow g2"></div>
+    <div class="widgets" id="widgets"></div>
+    <div id="windows"></div>
+  </main>
+  <nav class="dock" id="dock" aria-label="Application dock"></nav>
+
+  <!-- Mobile fallback (< 820px) -->
+  <div class="mobile" id="mobile">
+    <nav class="m-tabs" id="mTabs"></nav>
+    <div id="mContent"></div>
+    <footer class="m-foot" id="mFoot"></footer>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
